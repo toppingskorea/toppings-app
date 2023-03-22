@@ -4,14 +4,12 @@ import 'package:toppings_app/views/screens/home_controller.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class HomeScreen extends GetView<HomeController> {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: MyWebView(),
-      ),
+    return SafeArea(
+      child: MyWebView(),
     );
   }
 }
